@@ -1,13 +1,8 @@
 import Image from "next/image";
+import Navigation from "@/components/nav";
 
 export default function Home() {
   return (
-    <main>
-      <nav>
-        <ul><a href="/">Home</a></ul>
-        <ul><a href="/hello">Hello World!</a></ul>
-      </nav>
-      <p>Hello World!</p>
-    </main>
+    <Navigation />
   );
 }
