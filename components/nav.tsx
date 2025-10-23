@@ -15,9 +15,9 @@ const pages = [
 export default function Navigation() {
     const pathname = usePathname();
     return (
-        <nav className="flex justify-center items-center p-4 gap-4">
+        <nav className="flex justify-center items-center gap-4 text-xl">
             {pages.map(({ name, path }) => (
-                <Link href={path} key={path} className={`hover:text-blue-400 ${pathname === path ? "text-blue-400 font-semibold" : ""}`}>
+                <Link href={path} key={path} className={`hover:text-blue-400 hover:text-2xl transition-all duration-300 ${pathname === path ? "text-2xl text-blue-400 font-semibold" : ""}`}>
                     {name}
                 </Link>
             ))}
