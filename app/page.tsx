@@ -7,10 +7,17 @@ export default function Home() {
     <main>
       <Navigation />
       <WebglLensflares />
-      <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-        text-4xl font-bold text-white">
-        Triton Web Developers
-      </p>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <p className="text-4xl font-bold text-white">Triton Web Developers</p>
+        <p className="text-2xl text-gray-300">We build websites.</p>
+        <a href="/contact" className="text-blue-500 hover:text-blue-600">
+            Join as a Developer
+        </a>
+         |  
+        <a href="/contact" className="text-blue-500 hover:text-blue-600">
+            Contact for a Free Website
+        </a>
+      </div>
     </main>
   );
 }

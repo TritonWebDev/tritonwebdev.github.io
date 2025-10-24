@@ -112,7 +112,7 @@ export default function WebglLensflares() {
                 }
 
                 addLight(0.55, 0.9, 0.5, 5000, 0, -1000);
-                addLight(0.08, 0.8, 0.5, 0, 0, -1000);
+                addLight(0.08, 0.8, 0.5, 700, 0, -1000);
                 addLight(0.995, 0.5, 0.9, 5000, 5000, -1000);
 
                 // Renderer
