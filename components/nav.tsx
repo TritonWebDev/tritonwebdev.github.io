@@ -9,6 +9,7 @@ const pages = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Team", path: "/team" },
+    { name: "Apply", path: "/apply" },
     { name: "Contact", path: "/contact" }
   ];
 
