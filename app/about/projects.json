@@ -1,0 +1,26 @@
+[
+    {
+        "name": "PERMIAS SDIA Website",
+        "description": "PERMIAS SDIA's Website",
+        "image": "/project-images/permiassdia.webp",
+        "link": "https://www.permiassdia.com"
+    },
+    {
+        "name": "tritonwebdev.github.io",
+        "description": "Triton Web Developer's main website",
+        "image": "/project-images/placeholder.webp",
+        "link": "https://tritonwebdev.github.io"
+    },
+    {
+        "name": "Triton Investing Society Website",
+        "description": "Triton Investing Society's Website",
+        "image": "/project-images/placeholder.webp",
+        "link": "https://tritonwebdev.github.io"
+    },
+    {
+        "name": "Triton Minecraft Website",
+        "description": "Triton Minecrafters' Website",
+        "image": "/project-images/placeholder.webp",
+        "link": "https://tritonwebdev.github.io" 
+    }
+]
