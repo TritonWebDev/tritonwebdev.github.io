@@ -3,31 +3,7 @@
 import { useState, useEffect } from 'react';
 import Navigation from "@/components/nav";
 
-interface ContactFormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
-
-interface FormErrors {
-  name?: string;
-  email?: string;
-  subject?: string;
-  message?: string;
-}
-
 export default function Contact() {
-  const [formData, setFormData] = useState<ContactFormData>({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const [errors, setErrors] = useState<FormErrors>({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   // Generate stars on mount
   useEffect(() => {
@@ -82,72 +58,7 @@ export default function Contact() {
     };
   }, []);
 
-  const validateForm = (): boolean => {
-    const newErrors: FormErrors = {};
-
-    if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email address';
-    }
-
-    if (!formData.subject.trim()) {
-      newErrors.subject = 'Subject is required';
-    }
-
-    if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
-    } else if (formData.message.trim().length < 10) {
-      newErrors.message = 'Message must be at least 10 characters';
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-    if (errors[name as keyof FormErrors]) {
-      setErrors(prev => ({
-        ...prev,
-        [name]: undefined
-      }));
-    }
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-    if (!validateForm()) {
-      return;
-    }
-
-    setIsSubmitting(true);
-    
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      setSubmitSuccess(true);
-      setIsSubmitting(false);
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-
-      setTimeout(() => setSubmitSuccess(false), 5000);
-    }, 1500);
-  };
+  
 
   return (
     <>
@@ -321,8 +232,9 @@ export default function Contact() {
                   <h2 className="text-2xl font-bold text-gray-800 mb-3">Social Media</h2>
                   <ul className="space-y-2">
                     <li>
+                      {/* replace with https://discord.gg/qmXBZrRW when set up*/}
                       <a 
-                        href="https://discord.gg/tritonwebdev" 
+                        href="https://discord.gg/tritonwebdev"
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:text-blue-800 transition-colors"

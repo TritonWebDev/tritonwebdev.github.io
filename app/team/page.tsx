@@ -48,7 +48,7 @@ export default function Team() {
       <main className="container mx-auto px-6 py-16">
         {/* Header Section */}
         <section className="text-center mb-20 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-light text-foreground mb-6">
+          <h1 className="text-4xl md:text-5xl text-foreground mb-6 font-bold">
             Our Team
           </h1>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto leading-relaxed">
