@@ -1,8 +1,14 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
-import useEmblaCarousel from 'embla-carousel-react'
 import projects from './projects.json';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import './swiper.css';
+
 
 export default function Home() {
   return (
@@ -23,6 +29,30 @@ export default function Home() {
 
         <div className="page-section-header animate-fade-in-delay-1">
           <h2>See What We've Built</h2>
+            <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: true,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+          >
+            {projects.map((project) => (
+              <SwiperSlide key={project.name}>
+                <a href={project.link} target="_blank">
+                  <Image src={project.image} alt={project.name} width={500} height={500} />
+                </a>
+              </SwiperSlide>
+            ))}
+            <SwiperSlide>
+              More coming soon...
+            </SwiperSlide>
+          </Swiper>
         </div>
 
       </div>

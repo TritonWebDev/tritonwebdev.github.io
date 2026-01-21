@@ -18,15 +18,15 @@ export default function Home() {
     <main className="page-container">
       <div className="page-content">
         <div className="page-header animate-fade-in">
-          <h1 className="text-white">Recruitment Timeline</h1>
+          <h1 className="text-white">Recruitment Timeline Spring 2026</h1>
         </div>
         <div className="page-section">
             <div className="space-y-8">
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">1</div>
                 <div>
-                  <h3 className="page-subheading text-white">Applications Open</h3>
-                  <p className="text-white page-content-text-large">January 15, 2024</p>
+                  <h3 className="page-subheading text-white !font-bold">Applications Open</h3>
+                  <p className="text-white page-content-text-large">Week 1</p>
                   <p className="page-content-text-large text-white">Submit your application through our Google Form</p>
                 </div>
               </div>
@@ -34,8 +34,8 @@ export default function Home() {
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">2</div>
                 <div>
-                  <h3 className="page-subheading text-white">Application Deadline</h3>
-                  <p className="text-white page-content-text-large">February 1, 2024</p>
+                  <h3 className="page-subheading text-white !font-bold">Application Deadline</h3>
+                  <p className="text-white page-content-text-large">Sunday of Week 2</p>
                   <p className="page-content-text-large text-white">All applications must be submitted by 11:59 PM PST</p>
                 </div>
               </div>
@@ -43,8 +43,8 @@ export default function Home() {
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
                 <div>
-                  <h3 className="page-subheading text-white">Interviews</h3>
-                  <p className="text-white page-content-text-large">February 5-12, 2024</p>
+                  <h3 className="page-subheading text-white !font-bold">Interviews</h3>
+                  <p className="text-white page-content-text-large">End of Week 3</p>
                   <p className="page-content-text-large text-white">Selected candidates will be contacted for interviews</p>
                 </div>
               </div>
@@ -52,8 +52,8 @@ export default function Home() {
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">4</div>
                 <div>
-                  <h3 className="page-subheading text-white">Results Announced</h3>
-                  <p className="text-white page-content-text-large">February 15, 2024</p>
+                  <h3 className="page-subheading text-white !font-bold">Results Announced</h3>
+                  <p className="text-white page-content-text-large">Week 5 Spring 2026</p>
                   <p className="page-content-text-large text-white">Welcome to the team!</p>
                 </div>
               </div>
