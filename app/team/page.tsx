@@ -1,64 +1,54 @@
 import Image from "next/image";
-import Navigation from "@/components/nav";
 
 const teamMembers = [
   {
-    name: "Daniel ___",
-    role: "Role Placeholder",
-    image: "/team/daniel.jpg",
-    description: "Description/Contact Info"
+    name: "Daniel Budidharma",
+    role: "President",
+    image: "/team-pics/daniel.webp",
+    description: "3rd year, Data Science"
   },
   {
-    name: "Jeremy ___",
-    role: "Role Placeholder",
-    image: "/team/jeremy.jpg",
-    description: "Description/Contact Info"
+    name: "Jeremy Lim",
+    role: "Vice President",
+    image: "/team-pics/jeremy.webp",
+    description: "3rd year, Computer Science"
   },
   {
-    name: "Nicole ___",
-    role: "Role Placeholder",
-    image: "/team/nicole.jpg",
-    description: "Description/Contact Info"
+    name: "Nicole Sutedja",
+    role: "Marketing & Outreach",
+    image: "/team-pics/nicole.webp",
+    description: "2nd year, Computer Science"
   },
   {
-    name: "Julie ___",
-    role: "Role Placeholder",
-    image: "/team/julie.jpg",
-    description: "Description/Contact Info"
+    name: "Julie Nguyen",
+    role: "Project Lead",
+    image: "/team-pics/julie.webp",
+    description: "4th year, Computer Science"
   },
   {
-    name: "Varick ___",
-    role: "Role Placeholder",
-    image: "/team/varick.jpg",
-    description: "Description/Contact Info"
-  },
-  {
-    name: "Benedict ___",
-    role: "Role Placeholder",
-    image: "/team/benedict.jpg",
-    description: "Description/Contact Info"
+    name: "Varick Hasim",
+    role: "Marketing & Outreach",
+    image: "/team-pics/varick.webp",
+    description: "3rd year, Data Science"
   }
 ];
 
 export default function Team() {
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-      
-      <main className="container mx-auto px-6 py-16">
-        {/* Header Section */}
-        <section className="text-center mb-20 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl text-foreground mb-6 font-bold">
+    <main className="page-container bg-background">
+      <div className="page-content">
+        <div className="page-header animate-fade-in">
+          <h1 className="text-foreground">
             Our Team
           </h1>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-foreground/70">
             A diverse group of passionate web developers dedicated to creating 
             exceptional user experiences through software.
           </p>
-        </section>
+        </div>
 
-        {/* Team Grid */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="page-section">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-auto">
           {teamMembers.map((member, index) => (
             <div 
               key={member.name}
@@ -72,13 +62,12 @@ export default function Team() {
                     {member.name.split(' ').map(n => n[0]).join('')}
                   </span>
                 </div>
-                {/* Uncomment when you have actual images */}
-                {/* <Image
+                <Image
                   src={member.image}
                   alt={member.name}
                   fill
                   className="object-cover"
-                /> */}
+                />
               </div>
 
               {/* Text Content */}
@@ -93,35 +82,37 @@ export default function Team() {
               </p>
             </div>
           ))}
-        </section>
+          </div>
+        </div>
 
-        {/* Values Section */}
-        <section className="mt-24 text-center animate-fade-in">
-          <h2 className="text-2xl font-light text-foreground mb-12">
-            Our Values
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="page-section">
+          <div className="page-section-header animate-fade-in">
+            <h2 className="text-foreground font-light">
+              Our Values
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto">
             <div className="space-y-4">
               <h3 className="text-lg font-normal text-foreground">Collaboration</h3>
               <p className="text-foreground/50 text-sm leading-relaxed">
-                We believe the best solutions emerge from shared perspectives and open dialogue.
+                We believe in helping and teaching each other to create great software.
               </p>
             </div>
             <div className="space-y-4">
-              <h3 className="text-lg font-normal text-foreground">Excellence</h3>
+              <h3 className="text-lg font-normal text-foreground">Proactivity</h3>
               <p className="text-foreground/50 text-sm leading-relaxed">
-                We're committed to delivering work of the highest quality in everything we do.
+                We encourage members to self-teach, take initiative, and get things done.
               </p>
             </div>
             <div className="space-y-4">
-              <h3 className="text-lg font-normal text-foreground">Innovation</h3>
+              <h3 className="text-lg font-normal text-foreground">Creativity</h3>
               <p className="text-foreground/50 text-sm leading-relaxed">
-                We embrace change and continuously seek better ways to solve problems.
+                We believe in creative solutions and thinking outside the box.
               </p>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </div>
+    </main>
   );
 }

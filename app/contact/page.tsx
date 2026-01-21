@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Navigation from "@/components/nav";
 
 export default function Contact() {
 
@@ -70,7 +69,7 @@ export default function Contact() {
           width: 100%;
           height: 100%;
           background: radial-gradient(ellipse at center, #0a1628 0%, #020817 100%);
-          z-index: 0;
+          z-index: -1;
         }
 
         .stars {
@@ -193,31 +192,27 @@ export default function Contact() {
       </div>
 
       <div style={{ position: 'relative', zIndex: 10 }}>
-        <Navigation />
-        <main className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            {/* Header */}
-            <div className="text-center mb-10">
-              <h1 className="animate-fade-in text-5xl md:text-6xl font-bold text-white mb-4">
+        <main className="page-container">
+          <div className="page-content">
+            <div className="page-header animate-fade-in">
+              <h1 className="text-white">
                 Contact Us
               </h1>
-              <p className="animate-fade-in text-xl text-white/90">
+              <p className="text-white/90">
                 Get in touch with <strong>Triton Web Developers :)</strong>
               </p>
-              <p className="animate-fade-in text-xl text-white/90">
+              <p className="text-white/90">
                 Please email us directly if your organization would like to request a free website!
               </p>
-
             </div>
 
             {/* Content Grid */}
             <div className="flex justify-center">
               {/* Contact Info Cards */}
               <div className="space-y-6 w-full max-w-md">
-                {/* Email Card */}
                 <div className="animate-fade-in-delay-1 bg-white rounded-xl shadow-lg p-6 transition-all duration-600 hover:scale-105 ease-out">
                   <div className="text-3xl mb-3">📧</div>
-                  <h2 className="text-2xl font-bold text-gray-800 mb-2">Email</h2>
+                  <h2 className="page-heading-3 font-bold text-gray-800 mb-2">Email</h2>
                   <a 
                     href="mailto:tritonwebdev@ucsd.edu" 
                     className="text-blue-600 hover:text-blue-800 transition-colors"
@@ -226,20 +221,19 @@ export default function Contact() {
                   </a>
                 </div>
 
-                {/* Social Media Card */}
                 <div className="animate-fade-in-delay-1 bg-white rounded-xl shadow-lg p-6 transition-all duration-600 hover:scale-105 ease-out">
                   <div className="text-3xl mb-3">🔗</div>
-                  <h2 className="text-2xl font-bold text-gray-800 mb-3">Social Media</h2>
+                  <h2 className="page-heading-3 font-bold text-gray-800 mb-3">Social Media</h2>
                   <ul className="space-y-2">
                     <li>
                       {/* replace with https://discord.gg/qmXBZrRW when set up*/}
                       <a 
-                        href="https://discord.gg/tritonwebdev"
+                        href="https://discord.com"
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:text-blue-800 transition-colors"
                       >
-                        Discord
+                        Discord - Coming Soon!
                       </a>
                     </li>
                     <li>
