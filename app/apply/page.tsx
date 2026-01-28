@@ -19,6 +19,7 @@ export default function Home() {
       <div className="page-content">
         <div className="page-header animate-fade-in">
           <h1 className="text-white">Recruitment Timeline Spring 2026</h1>
+          <h3 className="page-subheading text-white"> Applications will open Spring 2026. In the meantime, you can fill out our <a href="https://forms.gle/gU3cz6WKAjG8A6z78" className="text-blue-500 font-bold">interest form</a> and we'll contact you when applications open.</h3>
         </div>
         <div className="page-section">
             <div className="space-y-8">
@@ -43,18 +44,27 @@ export default function Home() {
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
                 <div>
-                  <h3 className="page-subheading text-white !font-bold">Interviews</h3>
+                  <h3 className="page-subheading text-white !font-bold">Interview Invitations Sent Out</h3>
                   <p className="text-white page-content-text-large">End of Week 3</p>
                   <p className="page-content-text-large text-white">Selected candidates will be contacted for interviews</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
+                <div>
+                  <h3 className="page-subheading text-white !font-bold">Interviews</h3>
+                  <p className="text-white page-content-text-large">Week 4</p>
+                  <p className="page-content-text-large text-white">Interviews will be conducted. You can expect a mix of technical and behavioral questions.</p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">4</div>
                 <div>
                   <h3 className="page-subheading text-white !font-bold">Results Announced</h3>
-                  <p className="text-white page-content-text-large">Week 5 Spring 2026</p>
-                  <p className="page-content-text-large text-white">Welcome to the team!</p>
+                  <p className="text-white page-content-text-large">Week 5</p>
+                  <p className="page-content-text-large text-white">Welcome! We will assign you to a team where you will work on a specific web dev project for a client.</p>
                 </div>
               </div>
             </div>
@@ -67,13 +77,13 @@ export default function Home() {
           <div className="space-y-8">
             <FAQItem
               question="What experience do I need to apply?"
-              answer="Eventually, we would like the club to be open to everyone of all skill levels. But for now, we are looking for people with demonstrated interest in web development to build a strong foundation for our club."
+              answer="Eventually, we would like the club to be open to everyone of all skill levels. But for now, we are looking for people with demonstrated interest in web development to build a strong foundation for our club. Any real projects with HTML/CSS/JavaScript are a strong signal, but we don't expect anything too fancy. Building websites for clubs is pretty simple!"
               index={0}
               isOpen={openFAQs.includes(0)}
               onToggle={toggleFAQ}
             />
             <FAQItem
-              question="What technologies should I know?"
+              question="What programming languages and frameworks should I know?"
               answer="HTML, CSS, and JavaScript. React is helpful but not required. We'll provide onboarding to help you get started, but we expect you to take initiative and self-teach whatever you need to implement your ideas."
               index={1}
               isOpen={openFAQs.includes(1)}
@@ -81,14 +91,14 @@ export default function Home() {
             />
             <FAQItem
               question="How much time commitment is expected?"
-              answer="We expect members to contribute 5-10 hours per week, including attending weekly meetings and working on assigned projects. Flexibility is provided during exam periods."
+              answer="Around 5-10 hours per week, including attending weekly meetings, working on assigned projects, and self-teaching anything you need to implement your ideas. This is not an explicit requirement. The most important thing is that things get done, and done well, by the deadline that our clients expect."
               index={3}
               isOpen={openFAQs.includes(3)}
               onToggle={toggleFAQ}
             />
             <FAQItem
               question="When will I hear back about my application?"
-              answer="You should expect to receive a response about one week after the application deadline."
+              answer="You should expect to receive a response about one week after the application deadline (end of week 3)."
               index={4}
               isOpen={openFAQs.includes(4)}
               onToggle={toggleFAQ}

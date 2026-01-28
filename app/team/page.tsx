@@ -41,10 +41,7 @@ export default function Team() {
           <h1 className="text-foreground">
             Our Team
           </h1>
-          <p className="text-foreground/70">
-            A diverse group of passionate web developers dedicated to creating 
-            exceptional user experiences through software.
-          </p>
+
         </div>
 
         <div className="page-section">

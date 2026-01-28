@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/three": "^0.180.0",
+    "baseline-browser-mapping": "^2.9.19",
     "embla-carousel-auto-scroll": "^8.6.0",
     "framer-motion": "^12.23.24",
     "motion": "^12.23.24",
