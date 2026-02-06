@@ -16,7 +16,7 @@ const teamMembers = [
   {
     name: "Nicole Sutedja",
     role: "Marketing & Outreach",
-    image: "/team-pics/nicole.webp",
+    image: "/team-pics/nicole.jpeg",
     description: "2nd year, Computer Science"
   },
   {
@@ -64,6 +64,7 @@ export default function Team() {
                   alt={member.name}
                   fill
                   className="object-cover"
+                  unoptimized={true}
                 />
               </div>
 
