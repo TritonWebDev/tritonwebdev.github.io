@@ -1,0 +1,20 @@
+li {
+    background-color: #f0f0f0;
+    border-style: solid;
+    border-width: 2px;
+    border-color:rgb(83, 83, 83);
+    margin: 1rem auto;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+li:hover {
+    background-color: #acacac;
+}
+
+ul {
+    width: 40%; 
+    margin: 0 auto; 
+    padding: 0;
+}
