@@ -121,7 +121,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
               <a 
-                href="https://forms.gle/gU3cz6WKAjG8A6z78" 
+                href="https://forms.gle/uYxvRknZjupzVV797" 
                 target="_blank" 
                 className="animate-fade-in text-4xl text-blue-500 font-bold"
               >

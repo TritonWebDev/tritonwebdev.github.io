@@ -202,7 +202,7 @@ export default function Contact() {
                 Get in touch with <strong>Triton Web Developers :)</strong>
               </p>
               <p className="text-white/90">
-                Please email us directly if your organization would like to request a free website!
+                Please fill out this form if your organization would like to request a free website!
               </p>
             </div>
 
