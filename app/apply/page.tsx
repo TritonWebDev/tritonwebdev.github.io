@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import FAQItem from "@/components/faq-item";
+import { DEVELOPER_APPLICATION_FORM_URL } from "@/lib/links";
 
 export default function Home() {
   const [openFAQs, setOpenFAQs] = useState<number[]>([]);
@@ -19,7 +20,7 @@ export default function Home() {
       <div className="page-content">
         <div className="page-header animate-fade-in">
           <h1 className="text-white">Recruitment Timeline Spring 2026</h1>
-          <h3 className="page-subheading text-white"> Applications are open for Spring 2026. Apply <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAJcxCbETaHIiGI0hMbVnfohyqzbwMDS64Zb285Sk5kP5OSA/viewform?usp=sharing&ouid=103814153701455182972" className="text-blue-500 font-bold">here</a>!</h3>
+          <h3 className="page-subheading text-white"> Applications are open for Spring 2026. Apply <a href={DEVELOPER_APPLICATION_FORM_URL} className="text-blue-500 font-bold">here</a>!</h3>
         </div>
         <div className="page-section">
             <div className="space-y-8">
@@ -121,7 +122,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfAJcxCbETaHIiGI0hMbVnfohyqzbwMDS64Zb285Sk5kP5OSA/viewform?usp=sharing&ouid=103814153701455182972" 
+                href={DEVELOPER_APPLICATION_FORM_URL} 
                 target="_blank" 
                 className="animate-fade-in text-4xl text-blue-500 font-bold"
               >

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { DEVELOPER_APPLICATION_FORM_URL } from "@/lib/links";
 import projects from './projects.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -22,7 +23,7 @@ export default function Home() {
           </p>
           <br />
           <p>
-            Interested in joining? Fill out our <a href="https://forms.gle/gU3cz6WKAjG8A6z78" className="text-blue-500 font-bold">interest form</a> while waiting for applications to open.
+            Interested in joining? Fill out our <a href={DEVELOPER_APPLICATION_FORM_URL} className="text-blue-500 font-bold">application form</a>.
             <br /> Interested in a free website? Fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfP2fZuzW75inVW8pkN6hdElrLUCbuIrPkNVfnBlTPWzYbr-A/viewform?usp=dialog">request form</a> or <a href="/contact" className="text-blue-500 font-bold">contact us</a>.
           </p>
         </div>
