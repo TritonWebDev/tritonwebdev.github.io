@@ -1,4 +1,5 @@
 import Home3DBackground from "@/components/home-3d-background";
+import { DEVELOPER_APPLICATION_FORM_URL } from "@/lib/links";
 
 export default function Home() {
   return (
@@ -61,7 +62,7 @@ export default function Home() {
 
               <div>
                 <a
-                  href="https://forms.gle/gU3cz6WKAjG8A6z78"
+                  href={DEVELOPER_APPLICATION_FORM_URL}
                   target="_blank"
                   rel="noreferrer"
                   data-pan-block="true"
