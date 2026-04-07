@@ -86,26 +86,26 @@ export default function Team() {
         <div className="page-section">
           <div className="page-section-header animate-fade-in">
             <h2 className="text-foreground font-light">
-              Our Values
+              Club Culture
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto">
             <div className="space-y-4">
-              <h3 className="text-lg font-normal text-foreground">Collaboration</h3>
+              <h3 className="text-lg font-normal text-foreground">Project-Based Club</h3>
               <p className="text-foreground/50 text-sm leading-relaxed">
-                We believe in helping and teaching each other to create great software.
+                We are a projects-based club. Our main activity is working on various software projects, from small websites for clients to cool web applications built for fun and learning.
               </p>
             </div>
             <div className="space-y-4">
-              <h3 className="text-lg font-normal text-foreground">Proactivity</h3>
+              <h3 className="text-lg font-normal text-foreground">Software for Students by Students</h3>
               <p className="text-foreground/50 text-sm leading-relaxed">
-                We encourage members to self-teach, take initiative, and get things done.
+                We encourage you to try to build software that people will actually use. This involves thinking about user problems and creating solutions using software.
               </p>
             </div>
             <div className="space-y-4">
-              <h3 className="text-lg font-normal text-foreground">Creativity</h3>
+              <h3 className="text-lg font-normal text-foreground">Teach Yourself</h3>
               <p className="text-foreground/50 text-sm leading-relaxed">
-                We believe in creative solutions and thinking outside the box.
+                CSE courses teach important fundamentals, but building modern software looks quite different from what you learn in class. We will teach you some of the basics, but we encourage members to self-teach, take initiative, and get things done.
               </p>
             </div>
           </div>

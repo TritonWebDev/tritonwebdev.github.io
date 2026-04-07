@@ -19,7 +19,7 @@ export default function Home() {
       <div className="page-content">
         <div className="page-header animate-fade-in">
           <h1 className="text-white">Recruitment Timeline Spring 2026</h1>
-          <h3 className="page-subheading text-white"> Applications will open Spring 2026. In the meantime, you can fill out our <a href="https://forms.gle/gU3cz6WKAjG8A6z78" className="text-blue-500 font-bold">interest form</a> and we'll contact you when applications open.</h3>
+          <h3 className="page-subheading text-white"> Applications are open for Spring 2026. Apply <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAJcxCbETaHIiGI0hMbVnfohyqzbwMDS64Zb285Sk5kP5OSA/viewform?usp=sharing&ouid=103814153701455182972" className="text-blue-500 font-bold">here</a>!</h3>
         </div>
         <div className="page-section">
             <div className="space-y-8">
@@ -46,7 +46,7 @@ export default function Home() {
                 <div>
                   <h3 className="page-subheading text-white !font-bold">Interview Invitations Sent Out</h3>
                   <p className="text-white page-content-text-large">End of Week 3</p>
-                  <p className="page-content-text-large text-white">Selected candidates will be contacted for interviews</p>
+                  <p className="page-content-text-large text-white">Selected candidates will be contacted for interviews by end of week 3</p>
                 </div>
               </div>
               
@@ -91,7 +91,7 @@ export default function Home() {
             />
             <FAQItem
               question="How much time commitment is expected?"
-              answer="Around 5-10 hours per week, including attending weekly meetings, working on assigned projects, and self-teaching anything you need to implement your ideas. This is not an explicit requirement. The most important thing is that things get done, and done well, by the deadline that our clients expect."
+              answer="Around 5 hours per week, including attending weekly meetings, working on assigned projects, and self-teaching anything you need to implement your ideas. This is not an explicit requirement. The most important thing is that things get done, and done well, by the deadline that our clients expect."
               index={3}
               isOpen={openFAQs.includes(3)}
               onToggle={toggleFAQ}
@@ -121,11 +121,11 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
               <a 
-                href="https://forms.gle/uYxvRknZjupzVV797" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfAJcxCbETaHIiGI0hMbVnfohyqzbwMDS64Zb285Sk5kP5OSA/viewform?usp=sharing&ouid=103814153701455182972" 
                 target="_blank" 
                 className="animate-fade-in text-4xl text-blue-500 font-bold"
               >
-                Interest Form
+                Apply now!
               </a>
           </div>
         </div>
